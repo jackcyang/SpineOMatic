@@ -2540,9 +2540,8 @@ Boolean = True) As String
         callout = callout + cutter
 
         If Not lcOtherNoBreak.Checked Then
-            lcBreak.Text = Trim(lcBreak.Text)
             For i = 0 To lcBreak.Lines.Length - 1
-                match = Trim(lcBreak.Lines(i))
+                match = lcBreak.Lines(i)
                 If match <> "" And callout.Contains(match) Then
                     If lcOtherBreakB4.Checked Then
                         callout = callout.Replace(match, vbCrLf & match)
