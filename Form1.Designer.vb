@@ -492,6 +492,7 @@ Partial Class Form1
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.plGenerateVoumeNumbers.SuspendLayout()
         Me.viaDOSPanel.SuspendLayout()
         Me.Panel17.SuspendLayout()
         Me.orientationPanel.SuspendLayout()

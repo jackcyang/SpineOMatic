@@ -5680,6 +5680,8 @@ Boolean = True) As String
             Exit Sub
         End If
 
+        btnGenerate.Enabled = False
+        lbCancelGenerateVolumes.Enabled = False
         volumeNoRow = inFirstNumber.Tag
         callnoStr = plGenerateVoumeNumbers.Tag
         callnoArr = callnoStr.Split("|")
@@ -5689,23 +5691,37 @@ Boolean = True) As String
             callnoArr(volumeNoRow) = "v." & i.ToString()
             nextCallnoLabel = String.Join(vbCrLf, callnoArr)
             sendToBatch2(nextCallnoLabel)
+            Application.DoEvents()
         Next
 
         CleanupForMultiVolumes()
     End Sub
 
     Private Sub LbCancelGenerateVolumes_Click(sender As Object, e As EventArgs) Handles lbCancelGenerateVolumes.Click
-        CleanupForMultiVolumes()
+        If btnMultiVolume.Tag = Nothing Then
+            CleanupForMultiVolumes()
+        End If
     End Sub
 
     Sub CleanupForMultiVolumes()
         plGenerateVoumeNumbers.Visible = False
         btnMultiVolume.Enabled = True
+        btnGenerate.Enabled = True
+        lbCancelGenerateVolumes.Enabled = True
 
         'Clear stored data
         inFirstNumber.Text = ""
         inLastNumber.Text = ""
         inFirstNumber.Tag = Nothing
         plGenerateVoumeNumbers.Tag = Nothing
+    End Sub
+
+    Private Sub inLastNumber_KeyPress(sender As Object, e As KeyPressEventArgs) Handles inLastNumber.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                MsgBox("Please enter numbers only")
+                e.Handled = True
+            End If
+        End If
     End Sub
 End Class
