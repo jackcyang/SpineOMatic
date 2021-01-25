@@ -19,11 +19,8 @@ Credentials to access the Alma Label Print Web Service, including the path to th
 
 ## Installation Instructions
 
-Download the latest [`SpineLabeler.exe`](https://github.com/jackcyang/SpineOMatic/releases/tag/v7.0.1) into an empty directory. Click the application to launch.
+Download [`SpineLabeler.exe`](https://github.com/ExLibrisGroup/SpineOMatic/releases/tag/v8.0.0) into an empty directory. Click the application to launch.
 
 The User's Manual can also be downloaded and viewed from SpineOMatic's "About" box. It contains a Quick Start guide that will help you get SpineOMatic installed quickly and easily.
 
 
-## Disclaimer
-
-SpineOMatic is provided free of charge to the Ex Libris Alma user community. It is offered without warranty of any kind. Use it at your own risk. Neither the Trustees of Boston College, nor the agents or employees of Boston College, are liable for damages of any kind resulting from the running of this software or using the information it produces.

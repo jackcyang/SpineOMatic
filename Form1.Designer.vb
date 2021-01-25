@@ -385,20 +385,17 @@ Partial Class Form1
         Me.altList = New System.Windows.Forms.ListBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.btnViewLicense = New System.Windows.Forms.Button()
         Me.btnDocDownload = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.chkXMLWarning = New System.Windows.Forms.CheckBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.lbl_copyXMLtext = New System.Windows.Forms.Label()
         Me.includeSettings = New System.Windows.Forms.CheckBox()
         Me.xmlCopyDone = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.dontConvert = New System.Windows.Forms.CheckBox()
         Me.xmlShell = New System.Windows.Forms.TextBox()
         Me.Label134 = New System.Windows.Forms.Label()
-        Me.Label133 = New System.Windows.Forms.Label()
-        Me.Label132 = New System.Windows.Forms.Label()
         Me.Label131 = New System.Windows.Forms.Label()
         Me.apiMethod = New System.Windows.Forms.TextBox()
         Me.Label130 = New System.Windows.Forms.Label()
@@ -410,26 +407,8 @@ Partial Class Form1
         Me.updatePath = New System.Windows.Forms.TextBox()
         Me.configText = New System.Windows.Forms.TextBox()
         Me.logEdits = New System.Windows.Forms.CheckBox()
-        Me.Label64 = New System.Windows.Forms.Label()
-        Me.Label63 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.javaCheck = New System.Windows.Forms.Button()
-        Me.javabox = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.inAlmaInstCode = New System.Windows.Forms.TextBox()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.inAlmaPassword = New System.Windows.Forms.TextBox()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.inAlmaUsername = New System.Windows.Forms.TextBox()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.inAlmaUrl = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.XMLPath = New System.Windows.Forms.TextBox()
         Me.btnMonitor = New System.Windows.Forms.Button()
-        Me.WebServiceURL = New System.Windows.Forms.TextBox()
-        Me.useServlet = New System.Windows.Forms.RadioButton()
-        Me.UseJavaApp = New System.Windows.Forms.RadioButton()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.showIsp = New System.Windows.Forms.CheckBox()
         Me.chkAddHostname = New System.Windows.Forms.CheckBox()
@@ -494,12 +473,6 @@ Partial Class Form1
         Me.Label86 = New System.Windows.Forms.Label()
         Me.TextBox24 = New System.Windows.Forms.TextBox()
         Me.printProgress = New System.Windows.Forms.Label()
-        Me.licenseAgreement = New System.Windows.Forms.TextBox()
-        Me.licensePanel = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.cancelAgreement = New System.Windows.Forms.Button()
-        Me.acceptAgreement = New System.Windows.Forms.Button()
-        Me.licenseHeadline = New System.Windows.Forms.Label()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label112 = New System.Windows.Forms.Label()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
@@ -519,7 +492,6 @@ Partial Class Form1
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.plGenerateVoumeNumbers.SuspendLayout()
         Me.viaDOSPanel.SuspendLayout()
         Me.Panel17.SuspendLayout()
         Me.orientationPanel.SuspendLayout()
@@ -561,13 +533,11 @@ Partial Class Form1
         Me.TabPage4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.sortBox.SuspendLayout()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FileSystemWatcher2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LabelRepeat, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.licensePanel.SuspendLayout()
         Me.Panel18.SuspendLayout()
         Me.Panel19.SuspendLayout()
         Me.xboxPanel.SuspendLayout()
@@ -4571,9 +4541,9 @@ Partial Class Form1
         Me.formatInfoPanel.Controls.Add(Me.wrapWidth)
         Me.formatInfoPanel.Controls.Add(Me.closeFormatInfo)
         Me.formatInfoPanel.Controls.Add(Me.Label45)
-        Me.formatInfoPanel.Location = New System.Drawing.Point(376, 168)
+        Me.formatInfoPanel.Location = New System.Drawing.Point(376, 131)
         Me.formatInfoPanel.Name = "formatInfoPanel"
-        Me.formatInfoPanel.Size = New System.Drawing.Size(148, 160)
+        Me.formatInfoPanel.Size = New System.Drawing.Size(148, 197)
         Me.formatInfoPanel.TabIndex = 63
         Me.formatInfoPanel.Visible = False
         '
@@ -4582,7 +4552,7 @@ Partial Class Form1
         Me.suppress3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.suppress3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.suppress3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.suppress3.Location = New System.Drawing.Point(108, 136)
+        Me.suppress3.Location = New System.Drawing.Point(108, 170)
         Me.suppress3.Margin = New System.Windows.Forms.Padding(0)
         Me.suppress3.Name = "suppress3"
         Me.suppress3.Size = New System.Drawing.Size(32, 13)
@@ -4596,7 +4566,7 @@ Partial Class Form1
         Me.suppress2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.suppress2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.suppress2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.suppress2.Location = New System.Drawing.Point(68, 136)
+        Me.suppress2.Location = New System.Drawing.Point(68, 170)
         Me.suppress2.Margin = New System.Windows.Forms.Padding(0)
         Me.suppress2.Name = "suppress2"
         Me.suppress2.Size = New System.Drawing.Size(32, 13)
@@ -4610,7 +4580,7 @@ Partial Class Form1
         Me.suppress1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.suppress1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.suppress1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.suppress1.Location = New System.Drawing.Point(28, 136)
+        Me.suppress1.Location = New System.Drawing.Point(28, 170)
         Me.suppress1.Margin = New System.Windows.Forms.Padding(0)
         Me.suppress1.Name = "suppress1"
         Me.suppress1.Size = New System.Drawing.Size(32, 13)
@@ -4624,7 +4594,7 @@ Partial Class Form1
         '
         Me.wrapWidth.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.wrapWidth.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.wrapWidth.Location = New System.Drawing.Point(116, 32)
+        Me.wrapWidth.Location = New System.Drawing.Point(116, 45)
         Me.wrapWidth.Name = "wrapWidth"
         Me.wrapWidth.Size = New System.Drawing.Size(32, 13)
         Me.wrapWidth.TabIndex = 51
@@ -4639,7 +4609,7 @@ Partial Class Form1
         Me.closeFormatInfo.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.closeFormatInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.closeFormatInfo.ForeColor = System.Drawing.Color.White
-        Me.closeFormatInfo.Location = New System.Drawing.Point(128, 0)
+        Me.closeFormatInfo.Location = New System.Drawing.Point(131, 0)
         Me.closeFormatInfo.Name = "closeFormatInfo"
         Me.closeFormatInfo.Size = New System.Drawing.Size(16, 15)
         Me.closeFormatInfo.TabIndex = 62
@@ -4648,10 +4618,10 @@ Partial Class Form1
         'Label45
         '
         Me.Label45.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.Location = New System.Drawing.Point(4, 4)
+        Me.Label45.Location = New System.Drawing.Point(6, 6)
         Me.Label45.Margin = New System.Windows.Forms.Padding(3)
         Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(140, 152)
+        Me.Label45.Size = New System.Drawing.Size(140, 159)
         Me.Label45.TabIndex = 43
         Me.Label45.Text = resources.GetString("Label45.Text")
         '
@@ -4923,9 +4893,8 @@ Partial Class Form1
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TabPage4.Controls.Add(Me.PictureBox1)
-        Me.TabPage4.Controls.Add(Me.btnViewLicense)
         Me.TabPage4.Controls.Add(Me.btnDocDownload)
+        Me.TabPage4.Controls.Add(Me.PictureBox1)
         Me.TabPage4.Controls.Add(Me.chkXMLWarning)
         Me.TabPage4.Controls.Add(Me.RichTextBox1)
         Me.TabPage4.Controls.Add(Me.lbl_copyXMLtext)
@@ -4937,28 +4906,27 @@ Partial Class Form1
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Current XML"
         '
-        'btnViewLicense
-        '
-        Me.btnViewLicense.Location = New System.Drawing.Point(296, 140)
-        Me.btnViewLicense.Name = "btnViewLicense"
-        Me.btnViewLicense.Size = New System.Drawing.Size(140, 28)
-        Me.btnViewLicense.TabIndex = 39
-        Me.btnViewLicense.Text = "View License Agreement"
-        Me.btnViewLicense.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.ToolTip1.SetToolTip(Me.btnViewLicense, "Displays License Agreement in Notepad")
-        Me.btnViewLicense.UseVisualStyleBackColor = True
-        Me.btnViewLicense.Visible = False
-        '
         'btnDocDownload
         '
-        Me.btnDocDownload.Location = New System.Drawing.Point(296, 72)
+        Me.btnDocDownload.Location = New System.Drawing.Point(296, 86)
         Me.btnDocDownload.Name = "btnDocDownload"
-        Me.btnDocDownload.Size = New System.Drawing.Size(140, 56)
+        Me.btnDocDownload.Size = New System.Drawing.Size(176, 40)
         Me.btnDocDownload.TabIndex = 37
-        Me.btnDocDownload.Text = "Download / view the SpineOMatic manual." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Requires MS Word)"
+        Me.btnDocDownload.Text = "View the SpineOMatic Wiki"
         Me.ToolTip1.SetToolTip(Me.btnDocDownload, "Downloads documentation and displays it in MS Word")
         Me.btnDocDownload.UseVisualStyleBackColor = True
         Me.btnDocDownload.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
+        Me.PictureBox1.BackgroundImage = Global.SpineLabeler.My.Resources.Resources.somBkgrnd
+        Me.PictureBox1.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(520, 320)
+        Me.PictureBox1.TabIndex = 36
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
         '
         'chkXMLWarning
         '
@@ -5015,25 +4983,12 @@ Partial Class Form1
         Me.xmlCopyDone.Size = New System.Drawing.Size(60, 12)
         Me.xmlCopyDone.TabIndex = 42
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.White
-        Me.PictureBox1.BackgroundImage = Global.SpineLabeler.My.Resources.Resources.somBkgrnd
-        Me.PictureBox1.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(520, 320)
-        Me.PictureBox1.TabIndex = 36
-        Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
-        '
         'TabPage5
         '
         Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.TabPage5.Controls.Add(Me.dontConvert)
         Me.TabPage5.Controls.Add(Me.xmlShell)
         Me.TabPage5.Controls.Add(Me.Label134)
-        Me.TabPage5.Controls.Add(Me.Label133)
-        Me.TabPage5.Controls.Add(Me.Label132)
         Me.TabPage5.Controls.Add(Me.Label131)
         Me.TabPage5.Controls.Add(Me.apiMethod)
         Me.TabPage5.Controls.Add(Me.Label130)
@@ -5045,23 +5000,8 @@ Partial Class Form1
         Me.TabPage5.Controls.Add(Me.updatePath)
         Me.TabPage5.Controls.Add(Me.configText)
         Me.TabPage5.Controls.Add(Me.logEdits)
-        Me.TabPage5.Controls.Add(Me.Label64)
-        Me.TabPage5.Controls.Add(Me.Label63)
-        Me.TabPage5.Controls.Add(Me.GroupBox3)
-        Me.TabPage5.Controls.Add(Me.Label7)
-        Me.TabPage5.Controls.Add(Me.inAlmaInstCode)
-        Me.TabPage5.Controls.Add(Me.Label53)
-        Me.TabPage5.Controls.Add(Me.inAlmaPassword)
-        Me.TabPage5.Controls.Add(Me.Label52)
-        Me.TabPage5.Controls.Add(Me.inAlmaUsername)
-        Me.TabPage5.Controls.Add(Me.Label51)
-        Me.TabPage5.Controls.Add(Me.inAlmaUrl)
-        Me.TabPage5.Controls.Add(Me.Label6)
         Me.TabPage5.Controls.Add(Me.XMLPath)
         Me.TabPage5.Controls.Add(Me.btnMonitor)
-        Me.TabPage5.Controls.Add(Me.WebServiceURL)
-        Me.TabPage5.Controls.Add(Me.useServlet)
-        Me.TabPage5.Controls.Add(Me.UseJavaApp)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Size = New System.Drawing.Size(528, 330)
@@ -5071,7 +5011,7 @@ Partial Class Form1
         'dontConvert
         '
         Me.dontConvert.AutoSize = True
-        Me.dontConvert.Location = New System.Drawing.Point(324, 228)
+        Me.dontConvert.Location = New System.Drawing.Point(324, 67)
         Me.dontConvert.Name = "dontConvert"
         Me.dontConvert.Size = New System.Drawing.Size(115, 17)
         Me.dontConvert.TabIndex = 72
@@ -5082,7 +5022,7 @@ Partial Class Form1
         '
         'xmlShell
         '
-        Me.xmlShell.Location = New System.Drawing.Point(448, 224)
+        Me.xmlShell.Location = New System.Drawing.Point(448, 63)
         Me.xmlShell.Multiline = True
         Me.xmlShell.Name = "xmlShell"
         Me.xmlShell.Size = New System.Drawing.Size(72, 60)
@@ -5094,37 +5034,17 @@ Partial Class Form1
         '
         Me.Label134.AutoSize = True
         Me.Label134.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label134.Location = New System.Drawing.Point(140, 228)
+        Me.Label134.Location = New System.Drawing.Point(140, 67)
         Me.Label134.Name = "Label134"
         Me.Label134.Size = New System.Drawing.Size(95, 13)
         Me.Label134.TabIndex = 69
         Me.Label134.Text = "(Java not required)"
         '
-        'Label133
-        '
-        Me.Label133.AutoSize = True
-        Me.Label133.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label133.Location = New System.Drawing.Point(448, 184)
-        Me.Label133.Name = "Label133"
-        Me.Label133.Size = New System.Drawing.Size(63, 13)
-        Me.Label133.TabIndex = 68
-        Me.Label133.Text = "(depricated)"
-        '
-        'Label132
-        '
-        Me.Label132.AutoSize = True
-        Me.Label132.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label132.Location = New System.Drawing.Point(180, 16)
-        Me.Label132.Name = "Label132"
-        Me.Label132.Size = New System.Drawing.Size(63, 13)
-        Me.Label132.TabIndex = 67
-        Me.Label132.Text = "(depricated)"
-        '
         'Label131
         '
         Me.Label131.AutoSize = True
         Me.Label131.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label131.Location = New System.Drawing.Point(88, 272)
+        Me.Label131.Location = New System.Drawing.Point(88, 111)
         Me.Label131.Name = "Label131"
         Me.Label131.Size = New System.Drawing.Size(52, 15)
         Me.Label131.TabIndex = 66
@@ -5132,7 +5052,7 @@ Partial Class Form1
         '
         'apiMethod
         '
-        Me.apiMethod.Location = New System.Drawing.Point(144, 272)
+        Me.apiMethod.Location = New System.Drawing.Point(144, 111)
         Me.apiMethod.Name = "apiMethod"
         Me.apiMethod.Size = New System.Drawing.Size(296, 20)
         Me.apiMethod.TabIndex = 65
@@ -5144,7 +5064,7 @@ Partial Class Form1
         '
         Me.Label130.AutoSize = True
         Me.Label130.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label130.Location = New System.Drawing.Point(68, 248)
+        Me.Label130.Location = New System.Drawing.Point(68, 87)
         Me.Label130.Name = "Label130"
         Me.Label130.Size = New System.Drawing.Size(70, 15)
         Me.Label130.TabIndex = 64
@@ -5154,7 +5074,7 @@ Partial Class Form1
         '
         Me.Label129.AutoSize = True
         Me.Label129.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label129.Location = New System.Drawing.Point(88, 296)
+        Me.Label129.Location = New System.Drawing.Point(88, 135)
         Me.Label129.Name = "Label129"
         Me.Label129.Size = New System.Drawing.Size(51, 15)
         Me.Label129.TabIndex = 63
@@ -5162,7 +5082,7 @@ Partial Class Form1
         '
         'apiKey
         '
-        Me.apiKey.Location = New System.Drawing.Point(144, 296)
+        Me.apiKey.Location = New System.Drawing.Point(144, 135)
         Me.apiKey.Name = "apiKey"
         Me.apiKey.Size = New System.Drawing.Size(296, 20)
         Me.apiKey.TabIndex = 62
@@ -5172,7 +5092,7 @@ Partial Class Form1
         '
         'apiURL
         '
-        Me.apiURL.Location = New System.Drawing.Point(144, 248)
+        Me.apiURL.Location = New System.Drawing.Point(144, 87)
         Me.apiURL.Name = "apiURL"
         Me.apiURL.Size = New System.Drawing.Size(296, 20)
         Me.apiURL.TabIndex = 61
@@ -5183,11 +5103,13 @@ Partial Class Form1
         'UseRestfulApi
         '
         Me.UseRestfulApi.AutoSize = True
+        Me.UseRestfulApi.Checked = True
         Me.UseRestfulApi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UseRestfulApi.Location = New System.Drawing.Point(4, 224)
+        Me.UseRestfulApi.Location = New System.Drawing.Point(4, 63)
         Me.UseRestfulApi.Name = "UseRestfulApi"
         Me.UseRestfulApi.Size = New System.Drawing.Size(131, 19)
         Me.UseRestfulApi.TabIndex = 60
+        Me.UseRestfulApi.TabStop = True
         Me.UseRestfulApi.Tag = "radio_useRESTful"
         Me.UseRestfulApi.Text = "Use RESTful API"
         Me.UseRestfulApi.UseVisualStyleBackColor = True
@@ -5195,7 +5117,7 @@ Partial Class Form1
         'ispList
         '
         Me.ispList.FormattingEnabled = True
-        Me.ispList.Location = New System.Drawing.Point(448, 284)
+        Me.ispList.Location = New System.Drawing.Point(448, 123)
         Me.ispList.Name = "ispList"
         Me.ispList.Size = New System.Drawing.Size(72, 17)
         Me.ispList.Sorted = True
@@ -5224,7 +5146,7 @@ Partial Class Form1
         '
         'logEdits
         '
-        Me.logEdits.Location = New System.Drawing.Point(448, 308)
+        Me.logEdits.Location = New System.Drawing.Point(448, 147)
         Me.logEdits.Name = "logEdits"
         Me.logEdits.Size = New System.Drawing.Size(68, 17)
         Me.logEdits.TabIndex = 38
@@ -5234,167 +5156,9 @@ Partial Class Form1
         Me.logEdits.UseVisualStyleBackColor = True
         Me.logEdits.Visible = False
         '
-        'Label64
-        '
-        Me.Label64.AutoSize = True
-        Me.Label64.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label64.ForeColor = System.Drawing.Color.Blue
-        Me.Label64.Location = New System.Drawing.Point(32, 116)
-        Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(147, 15)
-        Me.Label64.TabIndex = 37
-        Me.Label64.Text = "Your Alma Web Service account::"
-        '
-        'Label63
-        '
-        Me.Label63.AutoSize = True
-        Me.Label63.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label63.ForeColor = System.Drawing.Color.Blue
-        Me.Label63.Location = New System.Drawing.Point(32, 60)
-        Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(86, 15)
-        Me.Label63.TabIndex = 36
-        Me.Label63.Text = "Ex Libris provides:"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.Label1)
-        Me.GroupBox3.Controls.Add(Me.javaCheck)
-        Me.GroupBox3.Controls.Add(Me.javabox)
-        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(300, 12)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(216, 156)
-        Me.GroupBox3.TabIndex = 0
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Check for Java"
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(64, 16)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(144, 44)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "to see if java is installed on your computer and is available for use."
-        '
-        'javaCheck
-        '
-        Me.javaCheck.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.javaCheck.Location = New System.Drawing.Point(8, 20)
-        Me.javaCheck.Name = "javaCheck"
-        Me.javaCheck.Size = New System.Drawing.Size(52, 20)
-        Me.javaCheck.TabIndex = 1
-        Me.javaCheck.TabStop = False
-        Me.javaCheck.Text = "Check"
-        Me.ToolTip1.SetToolTip(Me.javaCheck, "Click to see whether java is installed and functioning on your computer.")
-        Me.javaCheck.UseVisualStyleBackColor = True
-        '
-        'javabox
-        '
-        Me.javabox.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.javabox.Location = New System.Drawing.Point(8, 60)
-        Me.javabox.Multiline = True
-        Me.javabox.Name = "javabox"
-        Me.javabox.Size = New System.Drawing.Size(200, 88)
-        Me.javabox.TabIndex = 0
-        Me.javabox.TabStop = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(24, 40)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(229, 13)
-        Me.Label7.TabIndex = 31
-        Me.Label7.Text = "Label Printing Web Service Credentials"
-        '
-        'inAlmaInstCode
-        '
-        Me.inAlmaInstCode.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.inAlmaInstCode.Location = New System.Drawing.Point(120, 96)
-        Me.inAlmaInstCode.Name = "inAlmaInstCode"
-        Me.inAlmaInstCode.Size = New System.Drawing.Size(172, 13)
-        Me.inAlmaInstCode.TabIndex = 21
-        Me.inAlmaInstCode.Tag = "text_almainstcode"
-        Me.ToolTip1.SetToolTip(Me.inAlmaInstCode, "Ex Libris-provided institution code")
-        '
-        'Label53
-        '
-        Me.Label53.AutoSize = True
-        Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label53.Location = New System.Drawing.Point(29, 96)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(83, 13)
-        Me.Label53.TabIndex = 29
-        Me.Label53.Text = "Institution Code:"
-        '
-        'inAlmaPassword
-        '
-        Me.inAlmaPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.inAlmaPassword.Location = New System.Drawing.Point(120, 152)
-        Me.inAlmaPassword.Name = "inAlmaPassword"
-        Me.inAlmaPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.inAlmaPassword.Size = New System.Drawing.Size(172, 13)
-        Me.inAlmaPassword.TabIndex = 23
-        Me.inAlmaPassword.Tag = "texo_almapassword"
-        Me.ToolTip1.SetToolTip(Me.inAlmaPassword, "Password associated with the user name")
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.Location = New System.Drawing.Point(60, 152)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(56, 13)
-        Me.Label52.TabIndex = 27
-        Me.Label52.Text = "Password:"
-        '
-        'inAlmaUsername
-        '
-        Me.inAlmaUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.inAlmaUsername.Location = New System.Drawing.Point(120, 132)
-        Me.inAlmaUsername.Name = "inAlmaUsername"
-        Me.inAlmaUsername.Size = New System.Drawing.Size(172, 13)
-        Me.inAlmaUsername.TabIndex = 22
-        Me.inAlmaUsername.Tag = "text_almausername"
-        Me.ToolTip1.SetToolTip(Me.inAlmaUsername, "Alma user name authorized to use Alma Label Printing Web Service")
-        '
-        'Label51
-        '
-        Me.Label51.AutoSize = True
-        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label51.Location = New System.Drawing.Point(52, 132)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(63, 13)
-        Me.Label51.TabIndex = 25
-        Me.Label51.Text = "User Name:"
-        '
-        'inAlmaUrl
-        '
-        Me.inAlmaUrl.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.inAlmaUrl.Location = New System.Drawing.Point(119, 76)
-        Me.inAlmaUrl.Name = "inAlmaUrl"
-        Me.inAlmaUrl.Size = New System.Drawing.Size(172, 13)
-        Me.inAlmaUrl.TabIndex = 20
-        Me.inAlmaUrl.Tag = "text_inalmaurl"
-        Me.inAlmaUrl.Text = "http://???.com"
-        Me.ToolTip1.SetToolTip(Me.inAlmaUrl, "URL to Alma server (http://alma.exlibrisgourp.com or similar)")
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(54, 76)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 13)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "Alma URL:"
-        '
         'XMLPath
         '
-        Me.XMLPath.Location = New System.Drawing.Point(480, 200)
+        Me.XMLPath.Location = New System.Drawing.Point(480, 39)
         Me.XMLPath.Name = "XMLPath"
         Me.XMLPath.Size = New System.Drawing.Size(40, 20)
         Me.XMLPath.TabIndex = 0
@@ -5405,7 +5169,7 @@ Partial Class Form1
         '
         'btnMonitor
         '
-        Me.btnMonitor.Location = New System.Drawing.Point(4, 276)
+        Me.btnMonitor.Location = New System.Drawing.Point(4, 115)
         Me.btnMonitor.Name = "btnMonitor"
         Me.btnMonitor.Size = New System.Drawing.Size(39, 20)
         Me.btnMonitor.TabIndex = 0
@@ -5414,41 +5178,6 @@ Partial Class Form1
         Me.ToolTip1.SetToolTip(Me.btnMonitor, "Tell the java app and the local PC to communicate via this folder")
         Me.btnMonitor.UseVisualStyleBackColor = True
         Me.btnMonitor.Visible = False
-        '
-        'WebServiceURL
-        '
-        Me.WebServiceURL.Location = New System.Drawing.Point(144, 180)
-        Me.WebServiceURL.Name = "WebServiceURL"
-        Me.WebServiceURL.Size = New System.Drawing.Size(296, 20)
-        Me.WebServiceURL.TabIndex = 14
-        Me.WebServiceURL.Tag = "text_webserviceurl"
-        Me.ToolTip1.SetToolTip(Me.WebServiceURL, "URL to java servlet that obtains Alma item XML")
-        '
-        'useServlet
-        '
-        Me.useServlet.AutoSize = True
-        Me.useServlet.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.useServlet.Location = New System.Drawing.Point(4, 181)
-        Me.useServlet.Name = "useServlet"
-        Me.useServlet.Size = New System.Drawing.Size(138, 19)
-        Me.useServlet.TabIndex = 1
-        Me.useServlet.Tag = "radio_useservlet"
-        Me.useServlet.Text = "Use Servlet, URL:"
-        Me.useServlet.UseVisualStyleBackColor = True
-        '
-        'UseJavaApp
-        '
-        Me.UseJavaApp.AutoSize = True
-        Me.UseJavaApp.Checked = True
-        Me.UseJavaApp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UseJavaApp.Location = New System.Drawing.Point(4, 12)
-        Me.UseJavaApp.Name = "UseJavaApp"
-        Me.UseJavaApp.Size = New System.Drawing.Size(167, 19)
-        Me.UseJavaApp.TabIndex = 0
-        Me.UseJavaApp.TabStop = True
-        Me.UseJavaApp.Tag = "radio_usejavaapp"
-        Me.UseJavaApp.Text = "Use Desktop Java App"
-        Me.UseJavaApp.UseVisualStyleBackColor = True
         '
         'TabPage6
         '
@@ -6136,75 +5865,6 @@ Partial Class Form1
         Me.printProgress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.printProgress.Visible = False
         '
-        'licenseAgreement
-        '
-        Me.licenseAgreement.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.licenseAgreement.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.licenseAgreement.Location = New System.Drawing.Point(8, 44)
-        Me.licenseAgreement.Multiline = True
-        Me.licenseAgreement.Name = "licenseAgreement"
-        Me.licenseAgreement.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.licenseAgreement.Size = New System.Drawing.Size(744, 244)
-        Me.licenseAgreement.TabIndex = 40
-        Me.licenseAgreement.Text = resources.GetString("licenseAgreement.Text")
-        '
-        'licensePanel
-        '
-        Me.licensePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.licensePanel.Controls.Add(Me.TextBox1)
-        Me.licensePanel.Controls.Add(Me.cancelAgreement)
-        Me.licensePanel.Controls.Add(Me.acceptAgreement)
-        Me.licensePanel.Controls.Add(Me.licenseHeadline)
-        Me.licensePanel.Controls.Add(Me.licenseAgreement)
-        Me.licensePanel.Location = New System.Drawing.Point(0, 0)
-        Me.licensePanel.Name = "licensePanel"
-        Me.licensePanel.Size = New System.Drawing.Size(16, 48)
-        Me.licensePanel.TabIndex = 56
-        Me.licensePanel.Visible = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(156, 308)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(448, 68)
-        Me.TextBox1.TabIndex = 43
-        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
-        '
-        'cancelAgreement
-        '
-        Me.cancelAgreement.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cancelAgreement.Location = New System.Drawing.Point(420, 380)
-        Me.cancelAgreement.Name = "cancelAgreement"
-        Me.cancelAgreement.Size = New System.Drawing.Size(76, 24)
-        Me.cancelAgreement.TabIndex = 42
-        Me.cancelAgreement.Text = "I decline"
-        Me.cancelAgreement.UseVisualStyleBackColor = True
-        '
-        'acceptAgreement
-        '
-        Me.acceptAgreement.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.acceptAgreement.Location = New System.Drawing.Point(272, 380)
-        Me.acceptAgreement.Name = "acceptAgreement"
-        Me.acceptAgreement.Size = New System.Drawing.Size(76, 24)
-        Me.acceptAgreement.TabIndex = 41
-        Me.acceptAgreement.Text = "I agree"
-        Me.acceptAgreement.UseVisualStyleBackColor = True
-        '
-        'licenseHeadline
-        '
-        Me.licenseHeadline.AutoSize = True
-        Me.licenseHeadline.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.licenseHeadline.ForeColor = System.Drawing.Color.Black
-        Me.licenseHeadline.Location = New System.Drawing.Point(220, 12)
-        Me.licenseHeadline.Name = "licenseHeadline"
-        Me.licenseHeadline.Size = New System.Drawing.Size(271, 20)
-        Me.licenseHeadline.TabIndex = 0
-        Me.licenseHeadline.Text = "SpineOMatic License Agreement"
-        '
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
@@ -6383,9 +6043,8 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(757, 415)
+        Me.ClientSize = New System.Drawing.Size(757, 414)
         Me.Controls.Add(Me.xboxPanel)
-        Me.Controls.Add(Me.licensePanel)
         Me.Controls.Add(Me.Panel19)
         Me.Controls.Add(Me.Panel18)
         Me.Controls.Add(Me.printProgress)
@@ -6511,8 +6170,6 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.TabPage6.ResumeLayout(False)
         Me.TabPage6.PerformLayout()
         Me.sortBox.ResumeLayout(False)
@@ -6520,8 +6177,6 @@ Partial Class Form1
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FileSystemWatcher2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LabelRepeat, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.licensePanel.ResumeLayout(False)
-        Me.licensePanel.PerformLayout()
         Me.Panel18.ResumeLayout(False)
         Me.Panel18.PerformLayout()
         Me.Panel19.ResumeLayout(False)
@@ -6664,20 +6319,8 @@ Partial Class Form1
     Friend WithEvents useExlibrisParsing As System.Windows.Forms.RadioButton
     Friend WithEvents chkIncludeHoldings As System.Windows.Forms.CheckBox
     Friend WithEvents TabPage5 As System.Windows.Forms.TabPage
-    Friend WithEvents useServlet As System.Windows.Forms.RadioButton
-    Friend WithEvents UseJavaApp As System.Windows.Forms.RadioButton
     Friend WithEvents XMLPath As System.Windows.Forms.TextBox
     Friend WithEvents btnMonitor As System.Windows.Forms.Button
-    Friend WithEvents WebServiceURL As System.Windows.Forms.TextBox
-    Friend WithEvents inAlmaPassword As System.Windows.Forms.TextBox
-    Friend WithEvents Label52 As System.Windows.Forms.Label
-    Friend WithEvents inAlmaUsername As System.Windows.Forms.TextBox
-    Friend WithEvents Label51 As System.Windows.Forms.Label
-    Friend WithEvents inAlmaUrl As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents inAlmaInstCode As System.Windows.Forms.TextBox
-    Friend WithEvents Label53 As System.Windows.Forms.Label
     Friend WithEvents altURL As System.Windows.Forms.TextBox
     Friend WithEvents altText As System.Windows.Forms.TextBox
     Friend WithEvents btn_saveALT As System.Windows.Forms.Button
@@ -6724,17 +6367,11 @@ Partial Class Form1
     Friend WithEvents nonFlagDefaults As System.Windows.Forms.TextBox
     Friend WithEvents flagDefaults As System.Windows.Forms.TextBox
     Friend WithEvents tips As System.Windows.Forms.CheckBox
-    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents javaCheck As System.Windows.Forms.Button
-    Friend WithEvents javabox As System.Windows.Forms.TextBox
     Friend WithEvents Label31 As System.Windows.Forms.Label
     Friend WithEvents Label32 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents inStartCol As System.Windows.Forms.TextBox
     Friend WithEvents inStartRow As System.Windows.Forms.TextBox
-    Friend WithEvents Label64 As System.Windows.Forms.Label
-    Friend WithEvents Label63 As System.Windows.Forms.Label
     Friend WithEvents chkGeoList As System.Windows.Forms.CheckBox
     Friend WithEvents tweakParsingPanel As System.Windows.Forms.Panel
     Friend WithEvents Label71 As System.Windows.Forms.Label
@@ -6915,13 +6552,6 @@ Partial Class Form1
     Friend WithEvents pocketDefaults As System.Windows.Forms.TextBox
     Friend WithEvents printProgress As System.Windows.Forms.Label
     Friend WithEvents configText As System.Windows.Forms.TextBox
-    Friend WithEvents licenseAgreement As System.Windows.Forms.TextBox
-    Friend WithEvents licensePanel As System.Windows.Forms.Panel
-    Friend WithEvents licenseHeadline As System.Windows.Forms.Label
-    Friend WithEvents cancelAgreement As System.Windows.Forms.Button
-    Friend WithEvents acceptAgreement As System.Windows.Forms.Button
-    Friend WithEvents btnViewLicense As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents spaceBreak As System.Windows.Forms.CheckBox
     Friend WithEvents lbl_setclipboard As System.Windows.Forms.Label
     Friend WithEvents copyDone As System.Windows.Forms.Label
@@ -7013,8 +6643,6 @@ Partial Class Form1
     Friend WithEvents Label130 As System.Windows.Forms.Label
     Friend WithEvents Label131 As System.Windows.Forms.Label
     Friend WithEvents apiMethod As System.Windows.Forms.TextBox
-    Friend WithEvents Label132 As System.Windows.Forms.Label
-    Friend WithEvents Label133 As System.Windows.Forms.Label
     Friend WithEvents Label134 As System.Windows.Forms.Label
     Friend WithEvents xmlShell As System.Windows.Forms.TextBox
     Friend WithEvents accessType As System.Windows.Forms.Label
